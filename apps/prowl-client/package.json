@@ -1,0 +1,28 @@
+{
+  "name": "@prowl/client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "tsc && vp build",
+    "preview": "vp preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@colyseus/schema": "catalog:",
+    "@colyseus/sdk": "catalog:",
+    "@game-engine/ecs": "workspace:*",
+    "@game-engine/networking": "workspace:*",
+    "@game-engine/physics": "workspace:*",
+    "@game-engine/renderer-2d": "workspace:*",
+    "@game-engine/shared": "workspace:*",
+    "@game-engine/state": "workspace:*",
+    "phaser": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  }
+}

@@ -4,11 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "ready": "vp fmt && vp lint && vp run test -r && vp run build -r",
-    "dev": "vp run website#dev",
+    "ready": "vp fmt && vp lint && vp run build -r && vp run test -r",
+    "prowl-client:dev": "vp run @prowl/client#dev",
+    "prowl-server:dev": "vp run @prowl/server#dev",
+    "build": "vp run build -r",
+    "typecheck": "pnpm run -r typecheck",
     "prepare": "vp config"
   },
   "devDependencies": {
+    "typescript": "catalog:",
     "vite-plus": "catalog:"
   },
   "engines": {

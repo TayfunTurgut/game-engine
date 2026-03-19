@@ -3,14 +3,21 @@ packages:
   - packages/*
   - tools/*
 
-catalogMode: prefer
-
 catalog:
   "@types/node": ^24
-  typescript: ^5
+  typescript: ^5.9.3
   vite: npm:@voidzero-dev/vite-plus-core@latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
   vite-plus: latest
+  vitest: npm:@voidzero-dev/vite-plus-test@latest
+
+  phaser: ^4.0.0-rc.6
+  bitecs: ^0.4.0
+  "@dimforge/rapier2d-compat": ^0.19.3
+  colyseus: ^0.17.8
+  "@colyseus/sdk": ^0.17.26
+  "@colyseus/schema": ^4.0.8
+
+catalogMode: prefer
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
